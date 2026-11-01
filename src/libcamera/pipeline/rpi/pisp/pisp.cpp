@@ -882,9 +882,9 @@ bool PipelineHandlerPiSP::match(DeviceEnumerator *enumerator)
 	 */
 	for (unsigned int i = 0; i < numCfeDevices; i++) {
 		DeviceMatch cfe("rp1-cfe");
-		cfe.add("rp1-cfe-fe-image0");
-		cfe.add("rp1-cfe-fe-stats");
-		cfe.add("rp1-cfe-fe-config");
+		cfe.add("rp1-cfe-fe_image0");
+		cfe.add("rp1-cfe-fe_stats");
+		cfe.add("rp1-cfe-fe_config");
 		std::shared_ptr<MediaDevice> cfeDevice = acquireMediaDevice(enumerator, cfe);
 
 		if (!cfeDevice) {
